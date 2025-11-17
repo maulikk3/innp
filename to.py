@@ -27,7 +27,7 @@ st.sidebar.header("📂 Dataset Input")
 choice = st.sidebar.radio("Select Input Method:", ["Use File Path", "Upload CSV"])
 
 if choice == "Use File Path":
-    file_path = r"C:\Users\mauli\Downloads\5c2f62fe-5afa-4119-a499-fec9d604d5bd.csv"  # <-- CHANGE IF NEEDED
+    file_path = r"5c2f62fe-5afa-4119-a499-fec9d604d5bd.csv"  # <-- CHANGE IF NEEDED
     df = pd.read_csv(file_path)
 else:
     uploaded = st.sidebar.file_uploader("Upload CSV", type=["csv"])
@@ -352,3 +352,4 @@ if page == "🚗 Vehicle Plate RTO Detection":
 # =====================================================================================
 # END
 # =====================================================================================
+
